@@ -1,6 +1,76 @@
+@import url("https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@400;600&display=swap");
+
+:root {
+  --company-primary-bg-color: rgb(32, 32, 32);
+  --company-secondary-bg-color: rgb(41, 41, 41);
+  --company-secondary-bg-light-5-color: rgb(54, 54, 54);
+  --company-secondary-bg-fallback-color: rgb(41, 41, 41);
+  --company-primary-text-color: rgb(255, 255, 255);
+  --company-primary-text-dark-5-color: rgb(242, 242, 242);
+  --company-primary-text-dark-10-color: rgb(230, 230, 230);
+  --company-primary-text-light-50-color: rgb(255, 255, 255);
+  --company-primary-text-light-77-color: rgb(255, 255, 255);
+  --company-secondary-text-color: rgb(255, 255, 255);
+  --company-secondary-text-light-5-color: rgb(255, 255, 255);
+  --company-secondary-text-light-15-color: rgb(255, 255, 255);
+  --company-link-color: rgb(192, 192, 192);
+  --company-color: rgb(255, 255, 255);
+  --company-button-text-color: rgb(255, 255, 255);
+  --company-button-bg-color: rgb(0, 97, 255);
+  --company-button-bg-light-5-color: rgb(26, 113, 255);
+  --company-button-bg-light-15-color: rgb(77, 144, 255);
+  --company-border-radius: 6px;
+  --company-header-font-family: "Arketyp-Serif-220816-Display";
+  --company-header-font-weight: 400;
+  --company-body-font-family: "Darker Grotesque", sans-serif;
+  --company-body-font-weight: 400;
+}
+
 #root {
   max-width: 1280px;
-  margin: 0 auto;
   padding: 2rem;
   text-align: center;
+  font-family: var(--company-body-font-family);
+}
+
+body {
+  background-color: var(--company-primary-bg-color);
+}
+
+.app {
+  display: flex;
+  flex-direction: column;
+}
+
+.canvas {
+  width: 80vw;
+  height: 20rem;
+}
+
+h1,
+h2,
+h3,
+p {
+  color: var(--company-primary-text-color);
+  text-align: left;
+}
+
+button {
+  background-color: transparent;
+  padding: 0.4rem 1rem;
+  border: 1px solid var(--company-primary-text-dark-10-color);
+  border-radius: 0.25em;
+  font-family: var(--company-body-font-family);
+  font-size: 1em;
+  color: var(--company-primary-text-color);
+  line-height: 100%;
+  cursor: pointer;
+}
+
+/* Align button label vertically, a bbit nasty but anyway ¯\(ツ)/¯. Based on https://ishadeed.com/article/button-label-alignment/ */
+button:before {
+  content: "";
+  display: inline-block;
+  height: 16px;
+  vertical-align: middle;
 }

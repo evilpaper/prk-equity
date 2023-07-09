@@ -1,0 +1,22 @@
+section {
+  padding-bottom: 6rem;
+}
+
+.kpi-scenarios {
+  text-align: start;
+}
+
+.kpi-scenario-buttons {
+  display: flex;
+  gap: 1rem;
+}
+
+.kpi-button {
+  font-weight: 700;
+  background-color: var(--company-button-bg-light-5-color);
+}
+
+.how-to-list {
+  text-align: start;
+  color: var(--company-primary-text-dark-10-color);
+}
