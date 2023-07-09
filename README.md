@@ -2,6 +2,8 @@
 
 PrK Equity is a mock platform for a fictional private equity company. Made as part of a simulated code review.
 
+The live version is deployed on Vercel and available here: [PrK Equity](https://prk-equity.vercel.app/)
+
 ## What's inside
 
 Right now it's only a dashboard page with a chart. The intention is to show common SaaS metrics and allow some kind of customization to explore effects on the business in different scenarios.
