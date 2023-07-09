@@ -1,46 +1,36 @@
-# Welcome to this ArK Coding Challenge
+# PrK Equity
 
-The aim of this case is to simulate a code review and to discuss some code in an informal setting, not to test specific technologies or syntaxes.
+PrK Equity is a mock platform for a fictional private equity company. Made as part of a simulated code review.
 
-## The Case
+## What's inside
 
-There's two components to the case, one is the server, which you shouldn't have to do anything with, and the other one is the client which is a [Vite](https://vitejs.dev/) project. The client is very bare-bones, by design, we leave it up to you how you want to build it.
+Right now it's only a dashboard page with a chart. The intention is to show common SaaS metrics and allow some kind of customization to explore effects on the business in different scenarios.
 
+The data for the metrics is taken from [Creandums Financial plan model template](https://blog.creandum.com/financial-plan-model-template-creandum-f28622951028). Highly recommend to check it out if you are intrested in that kind of stuff.
+
+## Philosphy
+
+Main philosohy has been to keep it simple. The goals is to visualizes data in a performant, responsive, and preferably beautiful way. The possibility to interact with the data hopefully makes it a bit more interesting to the user of the website.
+
+As few depencenies as possible. Responsive be default, at least possible to view the chart in a mobile.
+
+In the base case there where two components, one is the server, which you shouldn't have to do anything with, and the other one is the client. The client a [Vite](https://vitejs.dev/) project.
+
+The server is not used at the moment. The intention with the server is to retrive data. Might add later.
 The server has two endpoints, `/ads-spend-data` and `/purchase-data`, which queries BigQuery and returns some data.
 
-Your assignment is to create React components that fetches the data and visualizes it in a performant, responsive, and preferably beautiful way.
-
-To get you started, the `DataFetchDemo.tsx` file includes a shell of an example React component which fetches data from the server and
-`LineChartExample.tsx` has a trivial chart with hard-coded data, to serve as a basic example if you haven't worked with visualizations before. It's **not** a requirement to use either `axios` or `chart.js`.
-
-Please spend 3-4 hours to building useful functionality for visualizing the data, remember to think about responsiveness and performance. Try to come up with ways of making the data interesting to the user of the website.
-
-You can install any dependency you want but be aware that we will require you to reason about your choices.
-
-You do not have to worry about implementing tests for this case, however, do think about it when implementing your components.
+Test are not included.
 
 ## Pre-requisites
-
-A `bigquery_service_account.json` file in the root directory (you should have gotten access to download this file together with the case).
 
 Latest Node LTS version.
 
 ## Getting Started
 
-Open two terminal windows and run one command in each:
+Clone repo.
 
-```bash
-yarn server
-```
+Open a terminal window and run one command in each:
 
 ```bash
 yarn dev
 ```
-
-If you rather want to use npm you can run `npm install` and then `npm run server` and `npm run dev`.
-
-You're good to go!
-
-When you're done, submit your github repo via email to ArK.
-
-Good luck!

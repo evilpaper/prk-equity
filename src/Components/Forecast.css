@@ -11,6 +11,12 @@ section {
   gap: 1rem;
 }
 
+@media (max-width: 720px) {
+  .kpi-scenario-buttons {
+    flex-direction: column;
+  }
+}
+
 .kpi-button {
   font-weight: 700;
   background-color: var(--company-button-bg-light-5-color);
